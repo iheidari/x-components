@@ -7,8 +7,9 @@ import "./App.css";
 
 class App extends Component {
   render() {
+    const baseUrl = process.env.NODE_ENV === 'production' ? "/x-components" : "/";
     return (
-      <Router>
+      <Router basename={baseUrl}>
         <div className="App">
           <ul>
             <li>
