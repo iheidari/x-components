@@ -15,6 +15,18 @@ const AccordionDemo = () => {
           <p>Content of tab three</p>
         </Tab>
       </Accordion>
+      <hr/>
+      <Accordion>
+        <Tab id="tab4" title="Tab1" >
+          <p>Content of tab one</p>
+        </Tab>
+        <Tab id="tab5" title="Tab2" open>
+          <p>Content of tab two</p>
+        </Tab>
+        <Tab id="tab6" title="Tab3" >
+          <p>Content of tab three</p>
+        </Tab>
+      </Accordion>
     </div>
   );
 };
