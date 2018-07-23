@@ -16,11 +16,16 @@ class Accordion extends Component {
   clicked = id => {
     this.setState(prevState => {
       if (this.props.single) {
+        //For single mode, we use radio button
+        //then we should false the value of previous selected(opened) radio button 
+        //and true the current selected(opened) radio button 
+        
         // let openList = {};
         // for (let tabOpen in prevState.openList) {
         //   openList[tabOpen] = tabOpen === id;
         // }
         // return { openList };
+
         return {
           openList: {
             ...prevState.openList,
